@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Details</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="personal-recipe-book.html">Saved Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="recipe-container">
+      <main id="recipe-details">
+        <!-- Recipe details will be displayed here -->
+      </main>
+
+      <div class="right">
+        Ratings:
+        <br /><br />
+        <div class="rating">
+          <span style="color: black !important; font-size: 20" id="ratingText"
+            >(2)4.0</span
+          >
+          <input type="radio" name="rating" id="rating-1" value="1" />
+          <label for="rating-1">★</label>
+          <input type="radio" name="rating" id="rating-2" value="2" />
+          <label for="rating-2">★</label>
+          <input type="radio" name="rating" id="rating-3" value="3" />
+          <label for="rating-3">★</label>
+          <input type="radio" name="rating" id="rating-4" value="4" />
+          <label for="rating-4">★</label>
+          <input type="radio" name="rating" id="rating-5" value="5" />
+          <label for="rating-5">★</label>
+        </div>
+        <br />
+        <button id="save-recipe" class="save-btn">Save Recipe</button>
+      </div>
+    </div>
+    <script src="js/recipeScript.js"></script>
+  </body>
+</html>

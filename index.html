@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Google Sign-In meta tag -->
+    <meta name="google-signin-client_id" content="554236696463-3o8i1ar4qjk641kvqltt1627k2hfk3hu.apps.googleusercontent.com">
+  </head>
+  <body>
+    <header>
+      <h1>Recipe App</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="personal-recipe-book.html">Saved Recipes</a></li>
+          <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+        </ul>
+      </nav>
+      <input type="text" id="search" placeholder="Search for recipes..." />
+    </header>
+    <h2 class="title">Popular Recipes</h2>
+    <main id="recipe-list">
+      <!-- Recipes will be displayed here -->
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
