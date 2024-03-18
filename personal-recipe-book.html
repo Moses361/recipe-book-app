@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Recipe Book</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Personal Recipe Book</h1>
-      <nav>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Recipe Book</title>
+<link rel="stylesheet" href="css/styles.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jZ4IjrBv3RsioYB4eAABPebyo6LFKklS+jtA0vEnpR17/Vx2iwrrkmkzirFr1W21Vb4lDjc2Y2BSBfHxj4dO8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <h1>Personal Recipe Book</h1>
+    <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="personal-recipe-book.html" class="active">Saved Recipes</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-recipe-book.html" class="active">Saved Recipes</a></li>
         </ul>
-      </nav>
+    </nav>
+</header>
 
-    </header>
-    <div class="personal-recipe-book-container">
-      <main id="saved-recipes">
+<div class="personal-recipe-book-container">
+    <main id="saved-recipes">
         <!-- Saved recipes will be displayed here -->
-      </main>
+    </main>
 
-      <!-- Edit Recipe Modal -->
-      <div id="edit-modal" class="modal">
+    <!-- Edit Recipe Modal -->
+    <div id="edit-modal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Edit Recipe</h2>
-          <input type="text" id="edit-title" placeholder="Title" />
-          <br />
-          <textarea
-            id="edit-ingredients"
-            placeholder="Ingredients"
-            rows="5"
-          ></textarea>
-          <br />
-          <textarea
-            id="edit-instructions"
-            placeholder="Instructions"
-            rows="5"
-          ></textarea>
-          <button id="save-edit-btn" class="save-btn">Save Changes</button>
+            <span class="close">&times;</span>
+            <h2>Edit Recipe</h2>
+            <input type="text" id="edit-title" placeholder="Title">
+            <br>
+            <textarea id="edit-ingredients" placeholder="Ingredients" rows="5"></textarea>
+            <br>
+            <textarea id="edit-instructions" placeholder="Instructions" rows="5"></textarea>
+            <button id="save-edit-btn" class="save-btn">Save Changes</button>
         </div>
-      </div>
     </div>
+</div>
 
-    <script src="js/personalRecipeScripts.js"></script>
-  </body>
+<footer>
+    <p>&copy; 2024 Personal Recipe Book. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="js/personalRecipeScripts.js"></script>
+</body>
 </html>
